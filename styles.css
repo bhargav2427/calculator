@@ -1,0 +1,37 @@
+.calculator {
+  width: 750px;
+  width: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.display {
+  margin-top: 15px;
+  width: 95%;
+  height: 70px;
+  border: 1px solid rgb(181, 181, 181);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+  font-size: 25px;
+}
+
+.numbers {
+  display: flex;
+}
+
+.equals {
+  height: 275px;
+  margin-left: 16px;
+}
