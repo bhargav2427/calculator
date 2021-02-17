@@ -11,15 +11,16 @@ body {
   margin-top: 15px;
   width: 95%;
   height: 70px;
-  overflow: auto;
+  overflow-x: scroll;
   border: 1px solid rgb(181, 181, 181);
   margin-left: auto;
   margin-right: auto;
 }
 .display span {
-  margin-bottom: auto;
-  margin-right: auto;
+  display: block;
+  padding-bottom: 1px;
   font-size: 40px;
+  text-align: right;
 }
 .buttons {
   display: flex;
