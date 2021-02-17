@@ -1,24 +1,27 @@
 var expression = "";
 var b = document.getElementsByTagName("button");
 
-//b.splice(b.length - 1, b.length);
-
-for (var i = 0; i < b.length - 1; i++) {
+for (var i = 0; i < b.length - 2; i++) {
   b[i].addEventListener("click", function () {
     showLog(this.innerHTML);
   });
 }
 document.getElementById("equals").addEventListener("click", function () {
-  // console.log(expression);
   equals();
 });
 
 function equals() {
-  console.log(eval(expression));
-  // console.log("pressed");
+  document.getElementById("expression").innerHTML = eval(expression);
+  expression = eval(expression);
 }
 
 function showLog(x) {
   expression += x;
-  console.log(expression);
+  document.getElementById("expression").innerHTML = expression;
+}
+
+function abc() {
+  expression = "";
+  console.log("bhargav");
+  document.getElementById("expression").innerHTML = "";
 }

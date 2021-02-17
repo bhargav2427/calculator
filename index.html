@@ -12,11 +12,11 @@
     <div class="calculator">
         <div class="container">
             <div id="display" class="display">
-
+                <span id="expression"></span>
             </div>
             <div class="buttons">
                 <div>
-                    <div>
+                    <div class="signs">
                         <button>+</button>
                         <button>-</button>
                         <button>*</button>
@@ -42,10 +42,10 @@
                             <div>
                                 <button>0</button>
                                 <button>.</button>
-                                <button>C</button>
+                                <button onclick="abc()">C</button>
                             </div>
                         </div>
-                        <div><button id="equals" class="equals">=</button></div>
+                        <div><button id="equals" class="equals" style="background-color: #4d90fe;">=</button></div>
                     </div>
                 </div>
             </div>
