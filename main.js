@@ -1,7 +1,8 @@
 var expression = "";
-var b = document.getElementsByTagName("button");
+// var b = document.getElementsByTagName("button");
+var b = document.querySelectorAll("button:not([onclick])");
 
-for (var i = 0; i < b.length - 2; i++) {
+for (var i = 0; i < b.length - 1; i++) {
   b[i].addEventListener("click", function () {
     showLog(this.innerHTML);
   });
@@ -22,6 +23,11 @@ function showLog(x) {
 
 function abc() {
   expression = "";
-  console.log("bhargav");
   document.getElementById("expression").innerHTML = "";
+}
+
+function backslash() {
+  expression = expression.slice(0, expression.length - 1);
+  document.getElementById("expression").innerHTML = expression;
+  console.log(expression);
 }
